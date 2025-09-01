@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/logo_retrato.png" />
+    <title>Barbearia The Black</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Story+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="nav-container" id="home">
+      <div class="nav-logo" onclick="abrirMaps()">
+        <i class="fa-solid fa-map-pin"></i>
+        Av.Luiz Ralph Benatti, 905 Mário Dedini
+      </div>
+      <div class="nav-icons">
+        <div>
+          <i class="fa-brands fa-instagram" onclick="abrirInstagram()"></i>
+        </div>
+        <div>
+          <i class="fa-brands fa-whatsapp" onclick="abrirWhatsApp()"></i>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="header-container">
+        <h1>Barbearia The Black</h1>
+        <nav class="header-nav">
+          <div style="cursor: pointer; color: var(--cor-dourado)">Inicio</div>
+          <div class="ancora"><a href="#sobre">Sobre Nós</a></div>
+          <div class="ancora"><a href="#servicos">Serviços</a></div>
+          <div class="ancora"><a href="#horario">Horário</a></div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="hero-container">
+      <div class="fundo-hero"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          The Black – Mais que corte, <span>é atitude</span>.
+        </div>
+        <div>
+          <button class="agendar" onclick="abrirWhatsApp()">
+            Entre em contato
+            <i class="fa-solid fa-arrow-right" style="font-size: 20px"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="size-box" id="sobre"></div>
+
+    <div class="sobre-container">
+      <div class="sobre-texto">
+        <h2>
+          Sobre Nós
+          <div class="line"></div>
+        </h2>
+
+        <p class="paragraph">
+          Na Barbearia The Black, acreditamos que cuidar do cabelo ou da barba
+          vai muito além da estética: é sobre identidade, atitude e orgulho de
+          quem somos. Nascida e enraizada na periferia, nossa barbearia é um
+          espaço feito para valorizar a quebrada e mostrar que estilo e
+          confiança estão ao alcance de todos.
+        </p>
+        <p class="paragraph">
+          Aqui, o ambiente é autêntico, acolhedor e feito para quem busca mais
+          do que se cuidar: busca se sentir bem, respeitado e seguro do seu
+          estilo. Porque na The Black, não entregamos apenas cortes — entregamos
+          confiança, pertencimento e atitude.
+        </p>
+        <p class="paragraph">
+          Barbearia The Black – Mais que corte, é atitude.
+        </p>
+      </div>
+      <div>
+        <img
+          src="img/ambiente.png"
+          alt="iamgem do ambiente da barbearia"
+          width="350px"
+        />
+      </div>
+    </div>
+
+    <div class="size-box"></div>
+
+    <a
+      href="https://api.whatsapp.com/send/?phone=5519982604239&text&type=phone_number&app_absent=0"
+      class="whatsapp-button"
+      target="_blank"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp"
+      />
+    </a>
+
+    <div class="servicos-container" id="servicos">
+      <h2>
+        Serviços
+        <div class="line"></div>
+      </h2>
+      <div class="servicos-grid">
+        <div class="servicos-card" onclick="social()">
+          <img
+            src="img/tesoura-e-pente.png"
+            alt="icone tesoura e pente"
+            width="50"
+          />
+          <h3>Cortes Sociais</h3>
+          <p>Estilo clássico e elegante, ideal para todas as ocasiões.</p>
+        </div>
+
+        <div class="servicos-card" onclick="maquina()">
+          <img
+            src="img/maquina-de-cortar-cabelo.png"
+            alt="icone máquina"
+            width="50"
+          />
+          <h3>Máquina</h3>
+          <p>Praticidade e precisão para um visual moderno e limpo.</p>
+        </div>
+
+        <div class="servicos-card" onclick="freestyle()">
+          <img src="img/freestyle.png" alt="icone freestyle" width="50" />
+          <h3>Freestyle</h3>
+          <p>Desenhos e cortes personalizados para quem curte exclusividade.</p>
+        </div>
+
+        <div class="servicos-card" onclick="barba()">
+          <img src="img/barba.png" alt="icone barba e bigode" width="50" />
+          <h3>Barba e Bigode</h3>
+          <p>Modelagem completa com acabamento preciso e manutenção.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="galeria">
+      <h1>Galeria</h1>
+      <div class="secao-foto">
+        <div>
+          <div class="secao-foto-title">
+            <h2 id="social">Cortes Sociais</h2>
+            <div class="line"></div>
+          </div>
+          <div class="foto-container">
+            <div class="foto-card">
+              <img
+                src="img/social1.png"
+                alt="foto do corte de cabelo"
+                width="260"
+                height="280"
+              />
+            </div>
+            <div class="foto-card">
+              <img
+                src="img/social2.png"
+                alt="foto do corte de cabelo"
+                width="250"
+                height="280"
+              />
+            </div>
+            <div class="foto-card">
+              <img
+                src="img/social3.png"
+                alt="foto do corte de cabelo"
+                width="250"
+                height="280"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secao-foto">
+        <div>
+          <div class="secao-foto-title">
+            <h2 id="maquina">Máquina</h2>
+            <div class="line"></div>
+          </div>
+          <div class="foto-container">
+            <div class="foto-card">
+              <img
+                src="img/maquina_foto1.png"
+                alt="foto do corte de cabelo"
+                width="250"
+                height="280"
+              />
+            </div>
+            <div class="foto-card">
+              <img
+                src="img/maquina_foto2.png"
+                alt="foto do corte de cabelo"
+                width="260"
+                height="280"
+              />
+            </div>
+            <div class="foto-card">
+              <img
+                src="img/maquina_foto3.png"
+                alt="foto do corte de cabelo"
+                width="250"
+                height="280"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secao-foto">
+        <div>
+          <div class="secao-foto-title">
+            <h2 id="freestyle">Freestyle</h2>
+            <div class="line"></div>
+          </div>
+          <div class="foto-container">
+            <div class="foto-card">
+              <img
+                src="img/freestyle_foto1.png"
+                alt="foto do corte de cabelo"
+                width="250"
+                height="280"
+              />
+            </div>
+            <div class="foto-card">
+              <img
+                src="img/freestyle_foto2.png"
+                alt="foto do corte de cabelo"
+                width="260"
+                height="280"
+              />
+            </div>
+            <div class="foto-card">
+              <img
+                src="img/freestyle_foto3.png"
+                alt="foto do corte de cabelo"
+                width="260"
+                height="280"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secao-foto">
+        <div>
+          <div class="secao-foto-title">
+            <h2 id="barba">Barba e Bigode</h2>
+            <div class="line"></div>
+          </div>
+          <div class="foto-container">
+            <div class="foto-card">
+              <img
+                src="img/barba_foto1.png"
+                alt="foto do corte de cabelo"
+                width="250"
+                height="280"
+              />
+            </div>
+            <div class="foto-card">
+              <img
+                src="img/barba_foto2.png"
+                alt="foto do corte de cabelo"
+                width="250"
+                height="280"
+              />
+            </div>
+            <div class="foto-card">
+              <img
+                src="img/barba_foto3.png"
+                alt="foto do corte de cabelo"
+                width="250"
+                height="280"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="horario-container" id="horario">
+      <h2>
+        Horário de Funcionamento
+        <div class="line"></div>
+      </h2>
+      <div class="horario-grid">
+        <div class="dias-card">
+          <i class="fa-solid fa-calendar-days"></i>
+          <h3>Segunda</h3>
+          <p>Das 13h00 as 18h00</p>
+        </div>
+
+        <div class="dias-card">
+          <i class="fa-solid fa-calendar-days"></i>
+          <h3>Terça a Quinta</h3>
+          <p>Das 09h00 as 18h00</p>
+        </div>
+
+        <div class="dias-card">
+          <i class="fa-solid fa-calendar-days"></i>
+          <h3>Sexta</h3>
+          <p>Das 09h00 as 21h00</p>
+        </div>
+
+        <div class="dias-card">
+          <i class="fa-solid fa-calendar-days"></i>
+          <h3>Sábado</h3>
+          <p>Das 09h00 as 14h00</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="rodape">
+      <div class="rodape-column">
+        <h1 style="color: white">Barbearia The Black</h1>
+        <p>
+          <i class="fa-solid fa-map-pin"></i> Av.Luiz Ralph Benatti, 905 Mário
+          Dedini, SP - 13412297
+        </p>
+      </div>
+      <div class="rodape-column">
+        <div>
+          <h3>Navegação</h3>
+        </div>
+        <span class="voltar"><a href="#home">Voltar para o topo</a></span>
+        <span class="box"></span>
+      </div>
+      <div class="rodape-column">
+        <h3>Contato</h3>
+        <span class="numero-contato">(19) 999694728</span>
+        <span class="numero-contato">@_barbearia_the_black</span>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Copyright © 2026 Barbearia The Black - TODOS OS DIREITOS RESERVADOS.
+      </p>
+    </footer>
+  </body>
+
+  <script src="script.js"></script>
+</html>
